@@ -1,0 +1,40 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.project-image-container {
+  width: 348px;
+  height: 185px;
+  overflow: scroll;
+  background-color: transparent;
+}
+.project-image-lightstar {
+  width: 348px;
+  height: 449px;
+  background-image: url("../../images/lightstar.png");
+  background-size: cover;
+  background-position: top;
+}
+.project-image-katygreenlee {
+  width: 348px;
+  height: 449px;
+  background-image: url("../../images/katygreenlee.png");
+  background-size: cover;
+  background-position: top;
+}
+.project-card * {
+  padding: 0 10px;
+}
+.project-info {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    flex-direction: row;
+  }
+}

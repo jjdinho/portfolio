@@ -1,0 +1,32 @@
+.nav-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  height: 50px;
+}
+.jake-link {
+  cursor: pointer;
+}
+
+#branding {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.branding-content {
+  display: flex;
+}
+
+.branding-social-link {
+  /*padding: 0 5px;*/
+  /*margin: 0 15px;*/
+  font-size: 1em;
+}
+.branding-link {
+  padding: 0.5rem;
+}
+#email {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
