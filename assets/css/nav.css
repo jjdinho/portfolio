@@ -4,29 +4,25 @@
   position: relative;
   height: 50px;
 }
-.jake-link {
-  cursor: pointer;
+
+.social-nav-link {
+  font-size: 2em;
+  padding: 0 5px;
+}
+.social-links-wrapper {
+  position: inherit;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.nav-bar-front {
+  z-index: 1030;
 }
 
-#branding {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.branding-content {
-  display: flex;
-}
-
-.branding-social-link {
-  /*padding: 0 5px;*/
-  /*margin: 0 15px;*/
-  font-size: 1em;
-}
-.branding-link {
-  padding: 0.5rem;
-}
-#email {
-  position: absolute;
-  right: 0;
-  top: 0;
+@media (min-width: 992px) {
+  .social-links-wrapper {
+    position: absolute;
+  }
 }

@@ -20,77 +20,105 @@
   <title>Jake Johnson</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container-">
 
-    <div class="nav-wrapper d-flex justify-content-center fixed-top">
-      <div id="branding" class="animated">
-        <div class="branding-content">
-          <a id="homepage" class="branding-link jake-link" href="index.html">Jake Johnson</a>
-          <a class="branding-social-link branding-link" href="https://github.com/jjdinho"><i class="fab fa-github"></i></a>
-          <a class="branding-social-link branding-link" href="https://www.linkedin.com/in/jake-johnson-687b91a5/"><i class="fab fa-linkedin"></i></a>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light rounded">
+        <div class="social-links-wrapper">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="social-nav-link" href="https://github.com/jjdinho"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-nav-link" href="https://www.linkedin.com/in/jake-johnson-687b91a5/"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <ul class="nav">
-        <li class="nav-item">
-          <a id="projects-link" class="jake-link nav-link" href="projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a id="about-link" class="jake-link nav-link" href="about.html">About</a>
-        </li>
-      </ul>
-      <div id="email" class="animated">
-          <a class="nav-link" href="mailto:johnson.s.jake@gmail.com">johnson.s.jake@gmail.com</a>
-      </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-controls="mainnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="mainnavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a id="projects-link" class="nav-link text-right" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a id="projects-link" class="nav-link text-right" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
-    <div class="content-wrapper">
+    <main class="content-wrapper">
       <!-- Projects -->
       <div id="projects" class="">
         <div class="projects-wrapper">
           <div class="projects">
-            <div class="project-card">
-              <div class="project-info">
-                <h3>Personal Site for Professionals</h3>
-                <!-- <div class="technologies">
-                  <i class="fab fa-linkedin"></i>
-                  <i class="fab fa-linkedin"></i>
-                  <i class="fab fa-linkedin"></i>
-                </div> -->
-                <p class="description">A slim, clean landing-page for professionals. Capture new leads, display skills and products. Simple and effective.</p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="project-card-wrapper-1">
+                  <a href="https://jjdinho.github.io/personal-site-for-professionals/">
+                    <div class="project-card project-mobile-flex-column-reverse">
+                      <img class="project-img-left" src="assets/images/personalsiteforprofessionals.png" alt="Personal Site for Professionals">
+                      <div class="project-info-right">
+                        <h5>Personal Site for Professionals</h5>
+                        <!-- <div class="technologies">
+                          <i class="fab fa-linkedin"></i>
+                          <i class="fab fa-linkedin"></i>
+                          <i class="fab fa-linkedin"></i>
+                        </div> -->
+                        <p class="description">A slim, clean landing-page for professionals. Capture new leads, display skills and products. Simple and effective.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <a href="https://github.com/jjdinho/personal-site-for-professionals"><img class="project-img" src="assets/images/personalsiteforprofessionals.png" alt="Personal Site for Professionals"></a>
-            </div>
-            <div class="project-card">
-              <div class="project-info">
-                <h3>lightstar.fr</h3>
-                <!-- <div class="technologies">
-                  <i class="fab fa-linkedin"></i>
-                  <i class="fab fa-linkedin"></i>
-                  <i class="fab fa-linkedin"></i>
-                </div> -->
-                <p class="description">A site of educational videos geared toward young people which provides career suggestions based on interests. Built with ruby on rails.</p>
+              <div class="col-md-12">
+                <div class="project-card-wrapper-2">
+                  <div class="project-card project-mobile-flex-column">
+                    <div class="project-info-left">
+                      <h5>lightstar.fr</h5>
+                      <!-- <div class="technologies">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
+                      </div> -->
+                      <p class="description">A site of educational videos geared toward young people which provides career suggestions based on interests. Built with ruby on rails.</p>
+                    </div>
+                    <a href="http://www.lightstar.fr/"><img class="project-img-right" src="assets/images/lightstar.png" alt="lightstar.fr"></a>
+                  </div>
+                </div>
               </div>
-              <a href="http://www.lightstar.fr/"><img class="project-img" src="assets/images/lightstar.png" alt="lightstar.fr"></a>
-            </div>
 
-            <div class="project-card">
-              <div class="project-info">
-                <h3>katygreenlee.com</h3>
-                <!-- <div class="technologies">
-                  <i class="fab fa-linkedin"></i>
-                  <i class="fab fa-linkedin"></i>
-                  <i class="fab fa-linkedin"></i>
-                </div> -->
-                <p class="description">A live artist's ecommerce site. Beautifully simple display, an inviting user interface. Built on the wordpress framework.</p>
+              <div class="col-md-12">
+                <div class="project-card-wrapper-3">
+                  <div class="project-card project-mobile-flex-column-reverse">
+                    <a href="https://katygreenlee.com/paintings/"><img class="project-img-left"src="assets/images/katygreenlee.png" alt="katygreenlee.com"></a>
+                    <div class="project-info-right">
+                      <h5>katygreenlee.com</h5>
+                      <!-- <div class="technologies">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
+                      </div> -->
+                      <p class="description">A live artist's ecommerce site. Beautifully simple display, an inviting user interface. Built on the wordpress framework.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <a href="https://katygreenlee.com/paintings/"><img class="project-img"src="assets/images/katygreenlee.png" alt="katygreenlee.com"></a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <a class="home-email nav-link" href="mailto:johnson.s.jake@gmail.com">johnson.s.jake@gmail.com</a>
+    </main>
   </div>
 <!--   <script src="assets/js/toggle-links.js"></script> -->
-  <script src="assets.js/anime.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="assets/js/anime.min.js"></script>
 </body>
 </html>
