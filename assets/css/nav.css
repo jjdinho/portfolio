@@ -20,6 +20,11 @@
 .nav-bar-front {
   z-index: 1030;
 }
+.jake-nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+  color: gray;
+}
 
 @media (min-width: 992px) {
   .social-links-wrapper {

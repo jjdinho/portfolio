@@ -71,10 +71,98 @@
 }
 .my-box {
   position: fixed;
-  top:50px;
+  bottom:50vh;
   left: 0;
   height: 15px;
-  width:15px;
+  width:150vw;
+  transform: rotate(135deg);
   background-color: black;
-  z-index: 2000;
+  z-index: -2;
 }
+.my-box-2 {
+  position: fixed;
+  bottom:20vh;
+  left: 0;
+  height: 15px;
+  width:150vw;
+  transform: rotate(135deg);
+  background-color: black;
+  z-index: -2;
+}
+.my-box-3 {
+  position: fixed;
+  bottom:80vh;
+  left: -61vw;
+  height: 15px;
+  width:150vw;
+  transform: rotate(135deg);
+  background-color: black;
+  z-index: -2;
+}
+.line-container-1, .line-container-2, .line-container-3 {
+  position: fixed;
+  height: 15px;
+  width:150vw;
+  transform: rotate(135deg);
+  background-color: gray;
+  z-index: -3;
+  display: table;
+}
+.line-container-1 {
+  bottom:18vh;
+  left: 0;
+}
+.line-container-2 {
+  bottom:48vh;
+  left: 0;
+}
+.line-container-3 {
+  bottom:78vh;
+  left: -61vw;
+}
+.line {
+  width: 10%;
+  height: 100%;
+  display: table-cell;
+  /*border: 1px solid black;*/
+}
+.one {
+    background-color: #e8ecff
+}
+.two {
+  background-color: #c8d1fd
+}
+.three {
+  background-color: #a9b5fa
+}
+.four {
+  background-color: #8d9af5
+}
+.five {
+  background-color: #7580ed
+}
+.six {
+  background-color: #6168e4
+}
+.seven {
+  background-color: #5151d7
+}
+.eight {
+  background-color: #4c43c7
+}
+.nine {
+  background-color: #4938b3
+}
+.ten {
+  background-color: #462f9e
+}
+
+
+
+
+
+
+
+
+
+

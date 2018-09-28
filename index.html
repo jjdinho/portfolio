@@ -21,11 +21,49 @@
 <body>
   <i class="plane fas fa-paper-plane"></i>
   <div class="my-box"></div>
-  <div class="home-angle-5 x"></div>
+  <div class="line-container-1">
+    <div class="line one"></div>
+    <div class="line two"></div>
+    <div class="line three"></div>
+    <div class="line four"></div>
+    <div class="line five"></div>
+    <div class="line six"></div>
+    <div class="line seven"></div>
+    <div class="line eight"></div>
+    <div class="line nine"></div>
+    <div class="line ten"></div>
+  </div>
+  <div class="my-box-2"></div>
+  <div class="line-container-2">
+    <div class="line one"></div>
+    <div class="line two"></div>
+    <div class="line three"></div>
+    <div class="line four"></div>
+    <div class="line five"></div>
+    <div class="line six"></div>
+    <div class="line seven"></div>
+    <div class="line eight"></div>
+    <div class="line nine"></div>
+    <div class="line ten"></div>
+  </div>
+  <div class="my-box-3"></div>
+  <div class="line-container-3">
+    <div class="line one"></div>
+    <div class="line two"></div>
+    <div class="line three"></div>
+    <div class="line four"></div>
+    <div class="line five"></div>
+    <div class="line six"></div>
+    <div class="line seven"></div>
+    <div class="line eight"></div>
+    <div class="line nine"></div>
+    <div class="line ten"></div>
+  </div><div class="my-box-4"></div>
+  <!-- <div class="home-angle-5 x"></div>
   <div class="home-angle-4 x"></div>
   <div class="home-angle-3 x"></div>
   <div class="home-angle-2 x"></div>
-  <div class="home-angle-1 x"></div>
+  <div class="home-angle-1 x"></div> -->
   <div class="container-full">
     <nav class="navbar navbar-expand-lg navbar-light nav-bar-front rounded">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-controls="mainnavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +73,10 @@
       <div class="collapse navbar-collapse justify-content-md-center" id="mainnavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a id="projects-link" class="jake-link nav-link" href="projects.html">Projects</a>
+            <a id="projects-link" class="jake-nav-link" href="projects.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a id="projects-link" class="jake-link nav-link" href="about.html">About</a>
+            <a id="projects-link" class="jake-nav-link" href="about.html">About</a>
           </li>
         </ul>
       </div>
@@ -47,20 +85,34 @@
     <main class="content-wrapper content-90vh">
       <!-- Home -->
       <div id="home">
-        <div class="home-circle-3">
+        <!-- <div class="home-circle-3">
           <div class="home-circle-2">
-            <div class="home-circle-1">
+            <div class="home-circle-1"> -->
               <div class="home-info jake-card-border title">
-                <div class=""><h1>Jake Johnson</h1></div>
+                <h1 class="screen-reader-only">Jake Johnson</h1>
+                  <div>
+                    <span class="anime">J</span>
+                    <span class="anime">a</span>
+                    <span class="anime">k</span>
+                    <span class="anime">e</span>
+                    <span class="space"></span>
+                    <span class="anime">J</span>
+                    <span class="anime">o</span>
+                    <span class="anime">h</span>
+                    <span class="anime">n</span>
+                    <span class="anime">s</span>
+                    <span class="anime">o</span>
+                    <span class="anime">n</span>
+                  </div>
                 <div class="social-links">
                   <a href="https://github.com/jjdinho"><i class="fab fa-github"></i></a>
                   <a href="https://www.linkedin.com/in/jake-johnson-687b91a5/"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <a class="home-email nav-link" href="mailto:johnson.s.jake@gmail.com">johnson.s.jake@gmail.com</a>
+                <a class="nav-link" href="mailto:johnson.s.jake@gmail.com">johnson.s.jake@gmail.com</a>
               </div>
-            </div>
+    <!--         </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
 
@@ -72,37 +124,24 @@
   <script src="assets/js/toggle-links.js"></script>
   <script src="assets/js/anime.min.js"></script>
     <script>
-      // var cssProperties = anime({
-      //   targets: '.x',
-      //   rotate: {
-      //       value: 360,
-      //       duration: 9000,
-      //       easing: 'easeInOutSine',
-      //   },
-      //   direction: 'normal',
-      //     loop: true,
-      //     delay: function(el, i, l) {
-      //       return i * 1000;
-      //     }
+      // anime({
+      //   targets: '.my-box-3',
+      //   width: '150vw',
+      //   bottom: '80vh',
+      //   left: '-61vw',
+      //   duration: 5000,
+      //   elasticity: 0,
+      //   easing: 'easeInOutSine'
       // });
-      var relativeValues = anime({
-        targets: '.title',
-        translateX: {
-          value: '+=150',
-          duration: 1000
-        },
-        width: {
-          value: '-=10',
-          duration: 1800,
-          easing: 'easeInOutSine'
-        },
-        height: {
-          value: '*=4',
-          duration: 1800,
-          easing: 'easeInOutSine'
-        },
-        direction: 'alternate'
-      });
+      // anime({
+      //   targets: '.line-container-3',
+      //   width: '150vw',
+      //   bottom: '78vh',
+      //   left: '-61vw;',
+      //   duration: 5000,
+      //   elasticity: 0,
+      //   easing: 'easeInOutSine'
+      // });
     </script>
 </body>
 </html>
