@@ -12,6 +12,7 @@
   padding: 15px;
   /*border-radius: 50%;*/
   z-index: 6;
+  opacity: 0;
 }
 
 .home-info span {

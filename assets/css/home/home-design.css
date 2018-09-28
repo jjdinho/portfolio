@@ -28,104 +28,6 @@
   border-radius: 50%;
   background-color: #E0D3DE;
 }
-.home-angle-1 {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(-210deg, #A0DDFF 50%, transparent 0%);
-  z-index: 1;
-}
-.home-angle-2 {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(-255deg, #af95fa 50%, transparent 0%);
-  z-index: 2;
-}
-.home-angle-3 {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(-290deg, #744fed 50%, transparent 0%);
-  z-index: 3;
-}
-.home-angle-4 {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(-330deg, #4624d7 50%, transparent 0%);
-  z-index: 4;
-}
-.home-angle-5 {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(-390deg, #230eb3 50%, transparent 0%);
-  z-index: 5;
-}
-.plane {
-  position: fixed;
-  bottom: -5%;
-  left: -5%;
-  z-index: 2000;
-}
-.my-box {
-  position: fixed;
-  bottom:50vh;
-  left: 0;
-  height: 15px;
-  width:150vw;
-  transform: rotate(135deg);
-  background-color: black;
-  z-index: -2;
-}
-.my-box-2 {
-  position: fixed;
-  bottom:20vh;
-  left: 0;
-  height: 15px;
-  width:150vw;
-  transform: rotate(135deg);
-  background-color: black;
-  z-index: -2;
-}
-.my-box-3 {
-  position: fixed;
-  bottom:80vh;
-  left: -61vw;
-  height: 15px;
-  width:150vw;
-  transform: rotate(135deg);
-  background-color: black;
-  z-index: -2;
-}
-.line-container-1, .line-container-2, .line-container-3 {
-  position: fixed;
-  height: 15px;
-  width:150vw;
-  transform: rotate(135deg);
-  background-color: gray;
-  z-index: -3;
-  display: table;
-}
-.line-container-1 {
-  bottom:18vh;
-  left: 0;
-}
-.line-container-2 {
-  bottom:48vh;
-  left: 0;
-}
-.line-container-3 {
-  bottom:78vh;
-  left: -61vw;
-}
-.line {
-  width: 10%;
-  height: 100%;
-  display: table-cell;
-  /*border: 1px solid black;*/
-}
 .one {
     background-color: #e8ecff
 }
@@ -156,7 +58,47 @@
 .ten {
   background-color: #462f9e
 }
-
+.table-45 {
+  border: none;
+  position: fixed;
+  top: -10vh;
+  left: -10vw;
+  height: 160vh;
+  width: 135vw;
+  z-index: -2;
+  transform: rotate(-45deg);
+}
+.table-s {
+  border: none;
+  position: fixed;
+  top: -10vh;
+  left: -10vw;
+  height: 160vh;
+  width: 135vw;
+  z-index: -1;
+  transform: rotate(-30deg);
+}
+.line {
+  height: 10px;
+  width: 0%;
+}
+.line-black {
+  height: 15px;
+  width: 0%;
+  background-color: black;
+}
+.line-thin-black {
+  height: 3px;
+  background-color: black;
+}
+.line-thin {
+  height: 1px;
+  width: 0%;
+}
+.whitespace {
+  background-color: transparent;
+  height: 100%;
+}
 
 
 
