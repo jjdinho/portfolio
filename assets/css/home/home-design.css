@@ -1,5 +1,4 @@
 .home-circle-1 {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +9,6 @@
   background-color: #058ED9;
 }
 .home-circle-2 {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +19,6 @@
   background-color: #FDD692;
 }
 .home-circle-3 {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,32 +29,52 @@
   background-color: #E0D3DE;
 }
 .home-angle-1 {
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(-210deg, #A0DDFF 50%, transparent 0%);
   z-index: 1;
 }
 .home-angle-2 {
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(-255deg, #af95fa 50%, transparent 0%);
   z-index: 2;
 }
 .home-angle-3 {
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(-290deg, #744fed 50%, transparent 0%);
   z-index: 3;
 }
 .home-angle-4 {
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(-330deg, #4624d7 50%, transparent 0%);
   z-index: 4;
 }
 .home-angle-5 {
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(-390deg, #230eb3 50%, transparent 0%);
   z-index: 5;
+}
+.plane {
+  position: fixed;
+  bottom: -5%;
+  left: -5%;
+  z-index: 2000;
+}
+.my-box {
+  position: fixed;
+  top:50px;
+  left: 0;
+  height: 15px;
+  width:15px;
+  background-color: black;
+  z-index: 2000;
 }
