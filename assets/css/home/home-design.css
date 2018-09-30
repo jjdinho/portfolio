@@ -81,11 +81,11 @@
 .line-black {
   height: 15px;
   width: 0%;
-  background-color: black;
+  background-color: rgb(60,60,60);
 }
 /*.line-thin-black {
   height: 3px;
-  background-color: black;
+  background-color: rgb(60,60,60);;
 }*/
 .line-thin {
   height: 1px;
