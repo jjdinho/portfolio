@@ -18,12 +18,17 @@
   white-space: nowrap;
 }
 .nav-bar-front {
+  /*background-color: #AAB6F5;*/
+  /*color: #fff;*/
   z-index: 1030;
 }
 .jake-nav-link {
   padding-right: .5rem;
   padding-left: .5rem;
-  color: gray;
+  color: #646ADD;
+}
+.email {
+  color: rgb(80,80,80);;
 }
 
 @media (min-width: 992px) {

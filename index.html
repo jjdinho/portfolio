@@ -389,7 +389,7 @@
   <table class="table-s" cellpadding="0" cellspacing="0">
     <tr class="table-row">
       <td>
-        <div class="line-thin-black"></div>
+        <!-- <div class="line-thin-black"></div> -->
         <div class="line-thin one"></div>
         <div class="whitespace"></div>
       </td>
@@ -960,52 +960,9 @@
       </td>
     </tr>
   </table>
-  <!-- <div class="my-box"></div>
-  <div class="line-container-1">
-    <div class="line one"></div>
-    <div class="line two"></div>
-    <div class="line three"></div>
-    <div class="line four"></div>
-    <div class="line five"></div>
-    <div class="line six"></div>
-    <div class="line seven"></div>
-    <div class="line eight"></div>
-    <div class="line nine"></div>
-    <div class="line ten"></div>
-  </div>
-  <div class="my-box-2"></div>
-  <div class="line-container-2">
-    <div class="line one"></div>
-    <div class="line two"></div>
-    <div class="line three"></div>
-    <div class="line four"></div>
-    <div class="line five"></div>
-    <div class="line six"></div>
-    <div class="line seven"></div>
-    <div class="line eight"></div>
-    <div class="line nine"></div>
-    <div class="line ten"></div>
-  </div>
-  <div class="my-box-3"></div>
-  <div class="line-container-3">
-    <div class="line one"></div>
-    <div class="line two"></div>
-    <div class="line three"></div>
-    <div class="line four"></div>
-    <div class="line five"></div>
-    <div class="line six"></div>
-    <div class="line seven"></div>
-    <div class="line eight"></div>
-    <div class="line nine"></div>
-    <div class="line ten"></div>
-  </div><div class="my-box-4"></div> -->
-  <!-- <div class="home-angle-5 x"></div>
-  <div class="home-angle-4 x"></div>
-  <div class="home-angle-3 x"></div>
-  <div class="home-angle-2 x"></div>
-  <div class="home-angle-1 x"></div> -->
+
   <div class="container-full">
-    <nav class="navbar navbar-expand-lg navbar-light nav-bar-front rounded">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light nav-bar-front rounded">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-controls="mainnavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -1020,41 +977,48 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
-    <main class="content-wrapper content-90vh">
+    <div class="content-wrapper content-90vh">
       <!-- Home -->
-      <div id="home">
-        <!-- <div class="home-circle-3">
-          <div class="home-circle-2">
-            <div class="home-circle-1"> -->
-              <div class="home-info jake-card-border title">
-                <h1 class="screen-reader-only">Jake Johnson</h1>
-                  <div>
-                    <span class="anime">J</span>
-                    <span class="anime">a</span>
-                    <span class="anime">k</span>
-                    <span class="anime">e</span>
-                    <span class="space"></span>
-                    <span class="anime">J</span>
-                    <span class="anime">o</span>
-                    <span class="anime">h</span>
-                    <span class="anime">n</span>
-                    <span class="anime">s</span>
-                    <span class="anime">o</span>
-                    <span class="anime">n</span>
-                  </div>
-                <div class="social-links">
-                  <a href="https://github.com/jjdinho"><i class="fab fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/jake-johnson-687b91a5/"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <a class="nav-link" href="mailto:johnson.s.jake@gmail.com">johnson.s.jake@gmail.com</a>
-              </div>
-    <!--         </div>
+      <main class="home-container jake-card-border">
+        <div class="home-nav-container">
+          <nav class="home-nav">
+              <ul class="">
+                <li class="">
+
+                    <a id="projects-link" class="jake-nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="">
+                  <a id="projects-link" class="jake-nav-link" href="about.html">About</a>
+                </li>
+              </ul>
+          </nav>
+        </div>
+        <div class="home-info">
+          <h1 class="screen-reader-only">Jake Johnson</h1>
+            <div>
+              <span class="anime">J</span>
+              <span class="anime">a</span>
+              <span class="anime">k</span>
+              <span class="anime">e</span>
+              <span class="space"></span>
+              <span class="anime">J</span>
+              <span class="anime">o</span>
+              <span class="anime">h</span>
+              <span class="anime">n</span>
+              <span class="anime">s</span>
+              <span class="anime">o</span>
+              <span class="anime">n</span>
+            </div>
+          <div class="social-links">
+            <a href="https://github.com/jjdinho"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jake-johnson-687b91a5/"><i class="fab fa-linkedin"></i></a>
           </div>
-        </div> -->
-      </div>
-    </main>
+          <a class="email nav-link" href="mailto:johnson.s.jake@gmail.com">johnson.s.jake@gmail.com</a>
+        </div>
+      </main>
+    </div>
 
   </div>
 
@@ -1088,7 +1052,7 @@
         easing: 'easeInOutSine'
       });
       anime({
-        targets: '.home-info',
+        targets: '.home-container',
         opacity: 1,
         duration: 2000,
         delay: 4500,
