@@ -14,11 +14,25 @@
 .home-nav {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .home-nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+.home-button {
+  position: absolute;
+  left: 0;
+  padding: 1em 0.5em;
+}
+.language {
+  position: absolute;
+  right: 0;
+  padding: 1em 0.5em;
+}
+.home-language {
+  margin: auto;
 }
 .home-nav li {
   display: inline-block;

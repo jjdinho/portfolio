@@ -1,10 +1,18 @@
 .skills {
-  display: flex;
-  justify-content: center;
+/*  display: flex;
+  justify-content: center;*/
+}
+.skill-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+.skill-description {
+  font-size: 12px;
+  font-weight: 300;
 }
 .icon-img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin: 5px;
   /*border: 1px gray solid;*/
 }

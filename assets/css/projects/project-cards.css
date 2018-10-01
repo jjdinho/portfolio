@@ -16,6 +16,9 @@
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
+.project-card:hover .project-img {
+  opacity: .7;
+}
 .project-description {
   padding-top: 20px;
 }
@@ -48,30 +51,9 @@
 }*/
 
 @media (min-width: 576px) {
-  .project-img-right, .project-img-left {
-    width: 400px;
-    height: 222px;
-    border: 1px solid rgba(0,0,0,0.1);
-  }
-  .project-info-right, .project-info-left {
-    max-width: 400px;
-  }
-  .project-info-right {
-    margin-left: 15px;
-  }
+
 }
 
 @media (min-width: 768px) {
-  .project-mobile-flex-column, .project-mobile-flex-column-reverse {
-    flex-direction: row;
-  }
-  .project-img-right, .project-img-left {
-    /*width: 400px;
-    height: 222px;*/
-    border: 1px solid rgba(0,0,0,0.1);
-  }
-  .project-info {
-    /*max-width: 400px;*/
-    margin-top: 0;
-  }
+
 }
