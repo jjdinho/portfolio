@@ -1,11 +1,10 @@
-.projects-wrapper {
-  margin: 0 auto;
-}
-.projects {
-  /*max-width: 700px;*/
+.projects-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 15px;
+/*  max-width: 900px;
+  min-width: 300px;*/
 }
 
