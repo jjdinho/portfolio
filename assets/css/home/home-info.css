@@ -32,13 +32,23 @@
   padding: 1em 0.5em;
 }
 .home-language {
+  position: absolute;
+  bottom: 0;
   margin: auto;
+  width: 60px;
+  text-align: center;
 }
 .home-nav li {
   display: inline-block;
   padding: 1em 0.5em;
 }
-.home-info {
+#main-content {
+}
+#language-link, #home-link {
+  display: none;
+}
+#home {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,15 +56,13 @@
   width: 300px;
   height: 300px;
   padding: 15px;
-  /*border-radius: 50%;*/
 }
-
-.home-info span {
+#home span {
   font-size: 2.5em;
 }
 .social-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   color: rgb(80,80,80);
 }
 .social-links a {

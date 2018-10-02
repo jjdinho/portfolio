@@ -61,8 +61,8 @@
 .table-45, .table-s {
   border: none;
   position: fixed;
-  top: -10vh;
-  left: -10vw;
+  top: -15vh;
+  left: -15vw;
   height: 160vh;
   width: 210vw;
 }
@@ -75,7 +75,7 @@
   transform: rotate(-30deg);
 }
 .line {
-  height: 10px;
+  height: 15px;
   width: 0%;
 }
 .line-black {
@@ -95,11 +95,21 @@
   background-color: transparent;
   height: 100%;
 }
+.transition {
+  /*transform: rotate(-45deg);*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*background-color: #5151d7;*/
+  height: 0;
+  width: 100vw;
+  z-index: 25;
+}
 
 @media (min-width: 576px) {
   .table-45, .table-s {
-    height: 160vh;
-    width: 135vw;
+    height: 235vh;
+    width: 160vw;
   }
 }
 
