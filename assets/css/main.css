@@ -22,7 +22,7 @@ p {
   font-size: 12px
 }
 .content-90vh {
-  height: 90vh;
+  min-height: 90vh;
 }
 .content-wrapper {
   /*margin-top: 140px;*/

@@ -2,6 +2,7 @@ const projectsLink = document.querySelector('#projects-link');
 const aboutLink = document.querySelector('#about-link');
 const homeLink = document.querySelector('#home-link');
 const languageLink = document.querySelector('#language-link');
+const languageLinkHome = document.querySelector('#language-link-home');
 
 const home = document.querySelector('#home');
 const projects = document.querySelector('#projects');
@@ -56,9 +57,10 @@ const animateTransition = () => {
   //     elasticity: 200,
   //     easing: 'easeInOutSine',
   //   });
+
   anime({
       targets: transitions,
-      height: '100vh',
+      height: '130vh',
       duration: 2500,
       elasticity: 0,
       easing: 'easeInOutSine',
@@ -68,7 +70,7 @@ const animateTransition = () => {
     });
   anime({
       targets: transitions,
-      top: '100vh',
+      top: '130vh',
       duration: 2000,
       delay: 2000,
       elasticity: 0,
@@ -92,9 +94,9 @@ const goToProjects = (event) => {
     setTimeout(displayNone, 1700, home);
     setTimeout(displayNone, 1700, about);
     // setTimeout(opacityOne, 1700, projects);
-    setTimeout(displayBlock, 1700, projects);
-    setTimeout(displayBlock, 1700, homeLink);
-    setTimeout(displayBlock, 1700, languageLink);
+    setTimeout(displayBlock, 2000, projects);
+    setTimeout(displayBlock, 2000, homeLink);
+    setTimeout(displayBlock, 2000, languageLink);
   }
 }
 
@@ -111,9 +113,9 @@ const goToAbout = (event) => {
     setTimeout(displayNone, 1700, home);
     setTimeout(displayNone, 1700, projects);
     // setTimeout(opacityOne, 1700, about);
-    setTimeout(displayBlock, 1700, about);
-    setTimeout(displayBlock, 1700, homeLink);
-    setTimeout(displayBlock, 1700, languageLink);
+    setTimeout(displayBlock, 2200, about);
+    setTimeout(displayBlock, 2200, homeLink);
+    setTimeout(displayBlock, 2200, languageLink);
   }
 }
 
@@ -130,9 +132,9 @@ const goToHome = (event) => {
     setTimeout(displayNone, 1700, about);
     setTimeout(displayNone, 1700, projects);
     // setTimeout(opacityOne, 1700, home);
-    setTimeout(displayFlex, 1700, home);
-    setTimeout(displayNone, 1700, homeLink);
-    setTimeout(displayNone, 1700, languageLink);
+    setTimeout(displayFlex, 2200, home);
+    setTimeout(displayNone, 2200, homeLink);
+    setTimeout(displayNone, 2200, languageLink);
   }
 }
 
@@ -140,10 +142,40 @@ const homeLinkListen = () => {
   homeLink.addEventListener("click", goToHome);
 };
 
+const goToOtherLanguagePage = () => {
+  if (window.location.href.indexOf("fr") > -1) {
+    window.location = 'index.html';
+  } else {
+    window.location = 'index_fr.html';
+  }
+};
+
+const changeLanguage = (event) => {
+  event.preventDefault();
+  page = document.body
+  anime({
+      targets: page,
+      opacity: 0,
+      duration: 1000,
+      elasticity: 0,
+      easing: 'easeInSine',
+    });
+  setTimeout(goToOtherLanguagePage, 1000);
+};
+
+const languageLinkListen = () => {
+  languageLink.addEventListener("click", changeLanguage);
+};
+
+const languageLinkHomeListen = () => {
+  languageLinkHome.addEventListener("click", changeLanguage);
+};
 
 
 document.addEventListener("DOMContentLoaded",function(){
   projectsLinkListen();
   aboutLinkListen();
   homeLinkListen();
+  languageLinkHomeListen();
+  languageLinkListen();
 });
