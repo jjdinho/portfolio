@@ -19,14 +19,15 @@
   <title>Jake Johnson</title>
 </head>
 <body>
+  <div class="background"></div>
   <div class="container-full">
     <div class="content-wrapper content-90vh">
       <!-- Home -->
-      <div class="left-line second-transition bg-black"></div>
-      <div class="left-line-inner first-transition bg-black"></div>
+      <div class="left-line outer-vertical three"></div>
+      <div class="left-line-inner inner-vertical three"></div>
       <main class="home-container">
-        <div class="top-line second-transition bg-black"></div>
-        <div class="top-line-inner first-transition bg-black"></div>
+        <div class="top-line outer-horizontal three"></div>
+        <div class="top-line-inner inner-horizontal three"></div>
         <div class="home-nav-container">
           <nav class="home-nav">
               <div class="home-button">
@@ -186,11 +187,11 @@
             </div>
           </div>
         </div>
-        <div class="bottom-line-inner first-transition bg-black"></div>
-        <div class="bottom-line second-transition bg-black"></div>
+        <div class="bottom-line-inner inner-horizontal three"></div>
+        <div class="bottom-line outer-horizontal three"></div>
       </main>
-      <div class="right-line-inner first-transition bg-black"></div>
-      <div class="right-line second-transition bg-black"></div>
+      <div class="right-line-inner inner-vertical three"></div>
+      <div class="right-line outer-vertical three"></div>
 
     </div>
 
@@ -204,40 +205,40 @@
   <script src="assets/js/transitions.js"></script>
   <script>
     anime({
-      targets: '.left-line',
-      height: '377px',
-      duration: 5000,
-      elasticity: 0,
-      easing: 'easeInOutSine'
-    });
-    anime({
-      targets: '.right-line',
-      height: '377px',
-      duration: 5000,
-      elasticity: 0,
-      easing: 'easeInOutSine'
-    });
-    anime({
-      targets: '.second-transition',
-      width: '100%',
-      duration: 3000,
-      delay: 2000,
-      elasticity: 0,
-      easing: 'easeInOutSine'
-    });
-    // anime({
-    //   targets: '.line',
-    //   width: '100%',
-    //   duration: 1500,
-    //   delay: 3500,
-    //   elasticity: 0,
-    //   easing: 'easeInOutSine'
-    // });
-    anime({
-      targets: '.home-container',
-      opacity: 1,
+      targets: '.inner-vertical',
+      height: '421px',
       duration: 2000,
-      delay: 4500,
+      elasticity: 0,
+      easing: 'easeInOutSine'
+    });
+    anime({
+      targets: '.outer-vertical',
+      height: '421px',
+      duration: 2000,
+      elasticity: 0,
+      easing: 'easeInOutSine'
+    });
+    anime({
+      targets: '.inner-horizontal',
+      width: '310px',
+      duration: 1500,
+      delay: 500,
+      elasticity: 0,
+      easing: 'easeInOutSine'
+    });
+    anime({
+      targets: '.outer-horizontal',
+      width: '310px',
+      duration: 1500,
+      delay: 500,
+      elasticity: 0,
+      easing: 'easeInOutSine'
+    });
+    anime({
+      targets: '.home-nav-container, .home-info, .background',
+      opacity: 1,
+      duration: 1000,
+      delay: 2000,
       elasticity: 0,
       easing: 'easeInOutSine'
     });
