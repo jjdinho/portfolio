@@ -76,11 +76,11 @@
 }
 .line {
   height: 15px;
-  width: 0%;
+  width: 100%;
 }
 .line-black {
   height: 10px;
-  width: 0%;
+  width: 100%;
   background-color: rgb(60,60,60);
 }
 /*.line-thin-black {
@@ -89,7 +89,7 @@
 }*/
 .line-thin {
   height: 1px;
-  width: 0%;
+  width: 100%;
 }
 .whitespace {
   background-color: transparent;
@@ -104,6 +104,34 @@
   height: 0;
   width: 100vw;
   z-index: 25;
+}
+.left-line {
+  border-radius: 5px 0 0 5px;
+}
+.right-line {
+  border-radius: 0 5px 5px 0;
+}
+.bg-black {
+  background-color: rgb(60,60,60);
+}
+.left-line, .right-line {
+  width: 5px;
+  /*height: 377px;*/
+  height: 0;
+}
+.bottom-line, .top-line {
+  width: 310px;
+  height: 5px;
+}
+.left-line-inner, .right-line-inner {
+  width: 5px;
+  height: 377px;
+  background-color: rgb(60,60,60);
+}
+.bottom-line-inner, .top-line-inner {
+  width: 310px;
+  height: 5px;
+  background-color: rgb(60,60,60);
 }
 @media (min-width: 576px) {
   .table-45, .table-s {

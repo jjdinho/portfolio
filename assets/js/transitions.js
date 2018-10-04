@@ -48,34 +48,26 @@ const displayFlex = (element) => {
 };
 
 const animateTransition = () => {
-  resetTransition();
-  // anime({
-  //     targets: '.home-container',
-  //     rotate: 70,
-  //     duration: 1000,
-  //     delay: 1000,
-  //     elasticity: 200,
-  //     easing: 'easeInOutSine',
-  //   });
+  // resetTransition();
 
-  anime({
-      targets: transitions,
-      height: '130vh',
-      duration: 2500,
-      elasticity: 0,
-      easing: 'easeInOutSine',
-      delay: function(el, i, l) {
-          return i * 300;
-        }
-    });
-  anime({
-      targets: transitions,
-      top: '130vh',
-      duration: 2000,
-      delay: 2000,
-      elasticity: 0,
-      easing: 'easeInSine',
-    });
+  // anime({
+  //     targets: transitions,
+  //     height: '130vh',
+  //     duration: 2500,
+  //     elasticity: 0,
+  //     easing: 'easeInOutSine',
+  //     delay: function(el, i, l) {
+  //         return i * 300;
+  //       }
+  //   });
+  // anime({
+  //     targets: transitions,
+  //     top: '130vh',
+  //     duration: 2000,
+  //     delay: 2000,
+  //     elasticity: 0,
+  //     easing: 'easeInSine',
+  //   });
 };
 
 const resetTransition = () => {
