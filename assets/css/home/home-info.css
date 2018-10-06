@@ -1,4 +1,5 @@
 .home-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -6,18 +7,20 @@
   /*opacity: 0;*/
   /*transition: all 0.5s ease-in-out;*/
 }
+
 .home-nav-container {
   padding-left: 0;
-  margin: 0;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin-top: 10px;
+  height: 56px;
 }
-.home-nav-container, .home-info {
+.home-nav-container, .home-info, #projects, #about {
   opacity: 0;
 }
 .home-nav {
   display: flex;
   justify-content: center;
   position: relative;
+  border-bottom: 1px solid #57D65C;
 }
 .home-nav ul {
   padding: 0;
@@ -27,18 +30,19 @@
 .home-button {
   position: absolute;
   left: 0;
-  padding: 1em 0.5em;
+  padding: 1em;
 }
 .language {
   position: absolute;
   right: 0;
-  padding: 1em 0.5em;
+  padding: 1em;
 }
 .home-language {
   position: absolute;
-  bottom: 0;
-  margin: auto;
-  width: 65px;
+  bottom: 15px;
+  left: 50%;
+  width: 70px;
+  margin-left: -35px;
   text-align: center;
 }
 .home-nav li {
@@ -56,17 +60,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*width: 300px;*/
+  width: 310px;
   height: 300px;
-  padding: 15px;
 }
 #home span {
   font-size: 2.5em;
+  color: #1E50B5;
 }
 .social-links {
   display: flex;
   justify-content: center;
-  color: rgb(80,80,80);
+  color: #1E50B5;
 }
 .social-links a {
   padding: 5px;

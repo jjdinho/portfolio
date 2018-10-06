@@ -8,6 +8,11 @@ const home = document.querySelector('#home');
 const projects = document.querySelector('#projects');
 const about = document.querySelector('#about');
 const transitions = document.querySelectorAll('.transition');
+const contentToBeHidden = document.querySelectorAll('.content-to-be-hidden');
+
+const projectsURL = 'projects.html';
+const aboutURL = 'about.html';
+const homeURL = 'index.html';
 
 const checkIfDisplayNone = (element) => {
   style = window.getComputedStyle(element),
@@ -39,6 +44,12 @@ const displayNone = (element) => {
   element.style.display = 'none';
 };
 
+const displayNoneMultiple = (elements) => {
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].style.display = 'none';
+  }
+};
+
 const displayBlock = (element) => {
   element.style.display = 'block';
 };
@@ -47,49 +58,57 @@ const displayFlex = (element) => {
   element.style.display = 'flex';
 };
 
-const animateTransition = () => {
-  // resetTransition();
-
-  // anime({
-  //     targets: transitions,
-  //     height: '130vh',
-  //     duration: 2500,
-  //     elasticity: 0,
-  //     easing: 'easeInOutSine',
-  //     delay: function(el, i, l) {
-  //         return i * 300;
-  //       }
-  //   });
-  // anime({
-  //     targets: transitions,
-  //     top: '130vh',
-  //     duration: 2000,
-  //     delay: 2000,
-  //     elasticity: 0,
-  //     easing: 'easeInSine',
-  //   });
-};
-
-const resetTransition = () => {
-  for (let i = 0; i < transitions.length; i++) {
-    transitions[i].style.height = '0';
-    transitions[i].style.top = '0';
-  }
+const goToLink = (link) => {
+  window.location = link;
 }
+
+const animateTransition = () => {
+  anime({
+      targets: '.left-line',
+      width: '100%',
+      duration: 1500,
+      elasticity: 0,
+      easing: 'easeOutExpo'
+    });
+  setTimeout(displayNoneMultiple, 300, contentToBeHidden);
+  anime({
+      targets: '#home',
+      width: '10px',
+      duration: 2000,
+      delay: 700,
+      elasticity: 0,
+      easing: 'easeOutExpo'
+    });
+  anime({
+      targets: '#home, .home-nav-container',
+      height: '0px',
+      duration: 2000,
+      delay: 1000,
+      elasticity: 0,
+      easing: 'easeOutExpo'
+    });
+  anime({
+      targets: '.home-container',
+      rotate: '180deg',
+      duration: 3000,
+      delay: 1000,
+      elasticity: 0,
+      easing: 'easeOutExpo'
+    });
+  anime({
+      targets: '.home-container',
+      opacity: '0',
+      duration: 1000,
+      delay: 2000,
+      elasticity: 0,
+      easing: 'easeOutExpo'
+    });
+};
 
 const goToProjects = (event) => {
   event.preventDefault();
-  if (checkIfDisplayNone(projects)) {
-    // opacityZero(home);
-    // opacityZero(about);
-    animateTransition();
-    setTimeout(displayNone, 1700, home);
-    setTimeout(displayNone, 1700, about);
-    // setTimeout(opacityOne, 1700, projects);
-    setTimeout(displayBlock, 2000, projects);
-    setTimeout(displayBlock, 2000, homeLink);
-    setTimeout(displayBlock, 2000, languageLink);
-  }
+  animateTransition();
+  setTimeout(goToLink, 3000, projectsURL);
 }
 
 const projectsLinkListen = () => {
@@ -98,16 +117,12 @@ const projectsLinkListen = () => {
 
 const goToAbout = (event) => {
   event.preventDefault();
-  if (checkIfDisplayNone(about)) {
-    // opacityZero(home);
-    // opacityZero(projects);
+  if (window.location.href.indexOf("about") > -1) {
+    console.log('on about page');
+  } else {
+    event.preventDefault();
     animateTransition();
-    setTimeout(displayNone, 1700, home);
-    setTimeout(displayNone, 1700, projects);
-    // setTimeout(opacityOne, 1700, about);
-    setTimeout(displayBlock, 2200, about);
-    setTimeout(displayBlock, 2200, homeLink);
-    setTimeout(displayBlock, 2200, languageLink);
+    setTimeout(goToLink, 3000, aboutURL);
   }
 }
 

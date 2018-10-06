@@ -25,10 +25,11 @@
 .jake-nav-link {
   padding-right: .5rem;
   padding-left: .5rem;
-  color: #757FEC;
+  color: #1E50B5;
 }
 .email {
-  color: rgb(80,80,80);;
+  color: #1E50B5;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
