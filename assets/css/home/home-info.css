@@ -51,9 +51,6 @@
 }
 #main-content {
 }
-#language-link, #home-link {
-  display: none;
-}
 #home {
   position: relative;
   display: flex;

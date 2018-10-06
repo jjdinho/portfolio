@@ -2,7 +2,6 @@ const projectsLink = document.querySelector('#projects-link');
 const aboutLink = document.querySelector('#about-link');
 const homeLink = document.querySelector('#home-link');
 const languageLink = document.querySelector('#language-link');
-const languageLinkHome = document.querySelector('#language-link-home');
 
 const home = document.querySelector('#home');
 const projects = document.querySelector('#projects');
@@ -120,7 +119,6 @@ const goToAbout = (event) => {
   if (window.location.href.indexOf("about") > -1) {
     console.log('on about page');
   } else {
-    event.preventDefault();
     animateTransition();
     setTimeout(goToLink, 3000, aboutURL);
   }
@@ -174,15 +172,12 @@ const languageLinkListen = () => {
   languageLink.addEventListener("click", changeLanguage);
 };
 
-const languageLinkHomeListen = () => {
-  languageLinkHome.addEventListener("click", changeLanguage);
-};
+
 
 
 document.addEventListener("DOMContentLoaded",function(){
   projectsLinkListen();
   aboutLinkListen();
   homeLinkListen();
-  languageLinkHomeListen();
   languageLinkListen();
 });
