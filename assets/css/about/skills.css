@@ -1,6 +1,7 @@
 .skills {
 /*  display: flex;
   justify-content: center;*/
+  padding: 15px;
 }
 .skill-title {
   font-size: 14px;

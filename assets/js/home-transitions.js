@@ -13,17 +13,6 @@ const projectsURL = 'projects.html';
 const aboutURL = 'about.html';
 const homeURL = 'index.html';
 
-const checkIfDisplayNone = (element) => {
-  style = window.getComputedStyle(element),
-  display = style.getPropertyValue('display');
-  if (display === 'none') {
-    return true;
-  }
-  else {
-    return false;
-  }
-}
-
 const opacityZero = (element) => {
   anime({
       targets: element,
@@ -47,14 +36,6 @@ const displayNoneMultiple = (elements) => {
   for (let i = 0; i < elements.length; i++) {
     elements[i].style.display = 'none';
   }
-};
-
-const displayBlock = (element) => {
-  element.style.display = 'block';
-};
-
-const displayFlex = (element) => {
-  element.style.display = 'flex';
 };
 
 const goToLink = (link) => {
@@ -94,20 +75,20 @@ const animateTransition = () => {
       elasticity: 0,
       easing: 'easeOutExpo'
     });
-  anime({
-      targets: '.home-container',
-      opacity: '0',
-      duration: 1000,
-      delay: 2000,
-      elasticity: 0,
-      easing: 'easeOutExpo'
-    });
+  // anime({
+  //     targets: '.home-container',
+  //     opacity: '0',
+  //     duration: 1000,
+  //     delay: 2000,
+  //     elasticity: 0,
+  //     easing: 'easeOutExpo'
+  //   });
 };
 
 const goToProjects = (event) => {
   event.preventDefault();
   animateTransition();
-  setTimeout(goToLink, 3000, projectsURL);
+  // setTimeout(goToLink, 3000, projectsURL);
 }
 
 const projectsLinkListen = () => {
@@ -130,17 +111,8 @@ const aboutLinkListen = () => {
 
 const goToHome = (event) => {
   event.preventDefault();
-  if (checkIfDisplayNone(home)) {
-    // opacityZero(about);
-    // opacityZero(projects);
-    animateTransition();
-    setTimeout(displayNone, 1700, about);
-    setTimeout(displayNone, 1700, projects);
-    // setTimeout(opacityOne, 1700, home);
-    setTimeout(displayFlex, 2200, home);
-    setTimeout(displayNone, 2200, homeLink);
-    setTimeout(displayNone, 2200, languageLink);
-  }
+  animateTransition();
+  setTimeout(goToLink, 3000, homeURL);
 }
 
 const homeLinkListen = () => {
