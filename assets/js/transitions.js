@@ -7,7 +7,7 @@ const home = document.querySelector('#home');
 const projects = document.querySelector('#projects');
 const about = document.querySelector('#about');
 const transitions = document.querySelectorAll('.transition');
-const contentToBeHidden = document.querySelectorAll('.content-to-be-hidden');
+const contentToBeHidden = document.querySelector('.content-container');
 
 const projectsURL = 'projects.html';
 const aboutURL = 'about.html';
@@ -46,40 +46,40 @@ const animateTransition = () => {
   anime({
       targets: '.left-line',
       width: '100%',
-      duration: 1500,
+      duration: 600,
       elasticity: 0,
       easing: 'easeOutExpo'
     });
-  setTimeout(displayNoneMultiple, 300, contentToBeHidden);
+  setTimeout(displayNone, 300, contentToBeHidden);
   anime({
-      targets: '.about-info',
+      targets: '.main-container',
       width: '10px',
-      duration: 2000,
-      delay: 700,
+      duration: 1500,
+      delay: 300,
       elasticity: 0,
       easing: 'easeOutExpo'
     });
   anime({
-      targets: '#about, .home-nav-container',
-      height: '0px',
-      duration: 2000,
-      delay: 1000,
+      targets: '.main-container',
+      height: '0',
+      duration: 1500,
+      delay: 800,
       elasticity: 0,
       easing: 'easeOutExpo'
     });
   anime({
-      targets: '.home-container',
+      targets: '.main-container',
       rotate: '180deg',
       duration: 3000,
-      delay: 1000,
+      delay: 800,
       elasticity: 0,
       easing: 'easeOutExpo'
     });
   anime({
-      targets: '.home-container',
+      targets: '.main-container',
       opacity: '0',
       duration: 1000,
-      delay: 2000,
+      delay: 1500,
       elasticity: 0,
       easing: 'easeOutExpo'
     });
