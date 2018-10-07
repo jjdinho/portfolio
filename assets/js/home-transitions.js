@@ -75,20 +75,20 @@ const animateTransition = () => {
       elasticity: 0,
       easing: 'easeOutExpo'
     });
-  // anime({
-  //     targets: '.home-container',
-  //     opacity: '0',
-  //     duration: 1000,
-  //     delay: 2000,
-  //     elasticity: 0,
-  //     easing: 'easeOutExpo'
-  //   });
+  anime({
+      targets: '.home-container',
+      opacity: '0',
+      duration: 1000,
+      delay: 2000,
+      elasticity: 0,
+      easing: 'easeOutExpo'
+    });
 };
 
 const goToProjects = (event) => {
   event.preventDefault();
   animateTransition();
-  // setTimeout(goToLink, 3000, projectsURL);
+  setTimeout(goToLink, 3000, projectsURL);
 }
 
 const projectsLinkListen = () => {

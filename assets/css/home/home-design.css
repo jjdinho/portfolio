@@ -31,14 +31,25 @@
 .bg-black {
   background-color: rgb(60,60,60);
 }
+.white-slider {
+  position: absolute;
+  z-index: 23;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
 .reveal-slider {
   position: absolute;
   z-index: 24;
   top: 0;
-  left: 0;
-  width: 100%;
+  /*left: 0;*/
+  width: 0;
   height: 100%;
-  background-color: #fff;
+  background-image: linear-gradient(-45deg, #57D65C, #5CE081);
+  border-radius: 5px;
 }
 .left-line, .right-line, .top-line, .bottom-line {
   position: absolute;
@@ -60,6 +71,7 @@
 }
 .left-line {
   left: 0;
+  top: 0;
   background-image: linear-gradient(-45deg, #57D65C, #5CE081);
 }
 .right-line {
@@ -69,6 +81,7 @@
 }
 .top-line {
   top: 0;
+  left: 0;
   background-image: linear-gradient(-90deg, #57D65C, #5CE081);
 }
 .bottom-line {

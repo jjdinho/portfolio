@@ -1,13 +1,24 @@
-.home-container {
+.main-container {
+  position: relative;
+  height: 360px;
+  width: 320px;
+}
+.content-container {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   z-index: 6;
+  width: 100%;
+  height: 100%;
   /*opacity: 0;*/
-  /*transition: all 0.5s ease-in-out;*/
 }
-
+.home-header {
+  font-size: 2.5em;
+  color: #1E50B5;
+}
 .home-nav-container {
   padding-left: 0;
   margin-top: 10px;
@@ -19,7 +30,9 @@
 .home-nav {
   display: flex;
   justify-content: center;
-  position: relative;
+  position: absolute;
+  top: 10px;
+  width: 100%;
   border-bottom: 1px solid #57D65C;
 }
 .home-nav ul {
@@ -59,10 +72,6 @@
   justify-content: center;
   width: 310px;
   height: 300px;
-}
-#home span {
-  font-size: 2.5em;
-  color: #1E50B5;
 }
 .social-links {
   display: flex;
