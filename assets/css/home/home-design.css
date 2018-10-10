@@ -48,7 +48,7 @@
   /*left: 0;*/
   width: 0;
   height: 100%;
-  background-image: linear-gradient(-45deg, #57D65C, #5CE081);
+  background-image: linear-gradient(-45deg, #2892D7, #6DAEDB);
   border-radius: 5px;
 }
 .left-line, .right-line, .top-line, .bottom-line {
@@ -72,22 +72,22 @@
 .left-line {
   left: 0;
   top: 0;
-  background-image: linear-gradient(-45deg, #57D65C, #5CE081);
+  background-image: linear-gradient(-45deg, #2892D7, #6DAEDB);
 }
 .right-line {
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(135deg, #57D65C, #5CE081);
+  background-image: linear-gradient(135deg, #2892D7, #6DAEDB);
 }
 .top-line {
   top: 0;
   left: 0;
-  background-image: linear-gradient(-90deg, #57D65C, #5CE081);
+  background-image: linear-gradient(-90deg, #2892D7, #6DAEDB);
 }
 .bottom-line {
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(90deg, #57D65C, #5CE081);
+  background-image: linear-gradient(90deg, #2892D7, #6DAEDB);
 }
 
 
