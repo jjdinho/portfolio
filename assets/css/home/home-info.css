@@ -21,6 +21,8 @@
   padding-left: 0;
   margin-top: 10px;
   height: 56px;
+  display: flex;
+  justify-content: center;
 }
 .home-nav {
   display: flex;
@@ -81,4 +83,7 @@
   bottom: 0;
   margin: 0 auto;
   z-index: 1030;
+}
+.home-container {
+  position: relative;
 }

@@ -23,7 +23,7 @@
   <div class="container-full">
 
     <div class="content-wrapper content-90vh">
-      <main class="home-container">
+      <main class="home-container container">
         <div class="home-nav-container">
           <nav class="home-nav">
               <div class="home-button">
@@ -99,10 +99,10 @@
             </div>
           </div>
         </div>
+        <div class="white-slider"></div>
+        <div class="reveal-slider"></div>
         <div class="left-line"></div>
         <div class="right-line line-transition"></div>
-        <div class="bottom-line line-transition"></div>
-        <div class="top-line line-transition"></div>
       </main>
     </div>
   </div>
@@ -112,29 +112,59 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="assets/js/anime.min.js"></script>
   <script>
-    anime({
-      targets: '.left-line, .right-line',
-      height: '100%',
-      duration: 3000,
-      elasticity: 0,
-      easing: 'easeOutExpo'
-    });
-    anime({
-      targets: '.top-line, .bottom-line',
-      width: '100%',
-      duration: 3000,
-      delay: 500,
-      elasticity: 0,
-      easing: 'easeOutExpo'
-    });
-    anime({
-      targets: '.home-nav-container, #projects',
-      opacity: '1',
-      duration: 2000,
-      delay: 2000,
-      elasticity: 0,
-      easing: 'easeOutExpo'
-    });
+    // anime({
+    //   targets: '.left-line, .right-line',
+    //   height: '100%',
+    //   borderRadius: '0',
+    //   duration: 3000,
+    //   delay: 500,
+    //   elasticity: 0,
+    //   easing: 'easeOutExpo'
+    // });
+    // anime({
+    //   targets: '.top-line, .bottom-line',
+    //   width: '100%',
+    //   duration: 3000,
+    //   delay: 500,
+    //   elasticity: 0,
+    //   easing: 'easeOutExpo'
+    // });
+
+    var basicTimeline = anime.timeline();
+
+    basicTimeline
+      .add({
+        targets: '.left-line, .right-line',
+        height: '100%',
+        width: '10px',
+        borderRadius: '0',
+        duration: 2500,
+        elasticity: 0,
+        easing: 'easeOutExpo'
+      })
+      .add({
+        targets: '.left-line, .right-line',
+        width: '100%',
+        duration: 800,
+        elasticity: 0,
+        easing: 'easeOutExpo'
+      })
+      .add({
+        targets: '.left-line, .right-line',
+        width: '10px',
+        duration: 800,
+        elasticity: 0,
+        easing: 'easeOutExpo'
+      });
+
+      anime({
+        targets: '.white-slider',
+        width: '0%',
+        duration: 600,
+        delay: 3200,
+        elasticity: 0,
+        easing: 'easeOutExpo'
+      });
   </script>
 </body>
 </html>
