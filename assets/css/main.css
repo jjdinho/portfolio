@@ -5,7 +5,7 @@
 body {
   font-family: 'Niramit', sans-serif;
   font-weight: 400;
-  color: rgb(50,50,50);
+  color: #fff;
 }
 a {
   text-decoration: none;
@@ -14,7 +14,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #2892D7;
+  color: #D4DCFF;
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
