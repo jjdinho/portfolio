@@ -43,6 +43,11 @@ p {
 }
 .about {
   width: 700px;
-  height: 600px;
+  height: 1000px;
+}
+@media (min-width: 768px) {
+  .about {
+    height: 600px;
+  }
 }
 
