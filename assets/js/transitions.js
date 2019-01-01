@@ -2,6 +2,7 @@ const projectsLink = document.querySelector('#projects-link');
 const aboutLink = document.querySelector('#about-link');
 const homeLink = document.querySelector('#home-link');
 const languageLink = document.querySelector('#language-link');
+const leaveProjectsPageLinks = document.querySelectorAll('.leave-projects-link');
 
 const home = document.querySelector('#home');
 const projects = document.querySelector('#projects');
@@ -98,7 +99,7 @@ const projectsLinkListen = () => {
 const goToAbout = (event) => {
   event.preventDefault();
   if (window.location.href.indexOf("about") > -1) {
-    console.log('on about page');
+    console.log('Already on about page :)');
   } else {
     animateTransition();
     setTimeout(goToLink, 3000, aboutURL);
@@ -116,7 +117,7 @@ const goToHome = (event) => {
 }
 
 const homeLinkListen = () => {
-  homeLink.addEventListener("click", goToHome);
+  if (homeLink) { homeLink.addEventListener("click", goToHome) }
 };
 
 const goToOtherLanguagePage = () => {
@@ -144,12 +145,61 @@ const languageLinkListen = () => {
   languageLink.addEventListener("click", changeLanguage);
 };
 
+const leaveProjectsPage = (event) => {
+  event.preventDefault();
+  anime({
+      targets: ['.left-line','.right-line'],
+      width: '100%',
+      duration: 1000,
+      elasticity: 0,
+      easing: 'easeOutExpo'
+    });
+  anime({
+      targets: '.projects-container',
+      width: '0px',
+      delay: 500,
+      duration: 1500,
+      elasticity: 0,
+      easing: 'easeOutExpo'
+    });
+  const page = document.body
+  anime({
+      targets: page,
+      opacity: 0,
+      delay: 500,
+      duration: 500,
+      elasticity: 0,
+      easing: 'easeInSine',
+    });
+  const target = event.target
+  if (target == homeLink) {
+    setTimeout(goToLink, 1500, homeURL);
+  } else if (target == aboutLink) {
+    setTimeout(goToLink, 1500, aboutURL);
+  }
+};
+
+const leaveProjectsPageListen = () => {
+  for (let i = 0; i < leaveProjectsPageLinks.length; i++) {
+    leaveProjectsPageLinks[i].addEventListener("click", leaveProjectsPage);
+  }
+}
+
+const addAllLinkEventListeners = () => {
+  projectsLinkListen();
+  aboutLinkListen();
+  homeLinkListen();
+  // languageLinkListen();
+}
 
 
 
 document.addEventListener("DOMContentLoaded",function(){
-  projectsLinkListen();
-  aboutLinkListen();
-  homeLinkListen();
-  languageLinkListen();
+  leaveProjectsPageListen();
+  // Only add other link listeners if we are not on the projects page.
+  if (window.location.href.indexOf("projects") > -1) {
+    console.log('Hey there :)')
+  } else {
+    addAllLinkEventListeners();
+  }
 });
