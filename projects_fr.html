@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +8,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <!-- Animate.css -->
-  <!-- <link rel="stylesheet" href="animate.min.css"> -->
-
   <!-- My style -->
   <link rel="stylesheet" href="styles.css">
 
@@ -22,76 +16,60 @@
 <body>
   <div class="container-full">
 
-    <!--  -->
     <div class="content-wrapper content-90vh">
-      <!-- Home -->
-      <main class="projects-container jake-card-border">
+      <main class="projects-container container">
         <div class="home-nav-container">
           <nav class="home-nav">
               <div class="home-button">
-                <a id="home-link" class="jake-nav-link" href="index.html">Home</a>
+                <a id="home-link" class="jake-nav-link leave-projects-link" href="index_fr.html">accueil</a>
               </div>
               <ul class="">
                 <li class="">
-                    <a id="projects-link" class="jake-nav-link" href="projects_fr.html">Projets</a>
+                    <a id="projects-link" class="jake-nav-link" href="#">projets</a>
                 </li>
                 <li class="">
-                  <a id="about-link" class="jake-nav-link" href="about_fr.html">À propos</a>
+                  <a id="about-link" class="jake-nav-link leave-projects-link" href="about_fr.html">à propos</a>
                 </li>
               </ul>
               <div class="language">
-                <a id="language-link" href="index.html" class="jake-nav-link">EN 🇺🇸</a>
+                <a id="language-link" href="projects_fr.html" class="jake-nav-link leave-projects-link"><span role="image" aria-label="american flag">en 🇺🇸</span></a>
               </div>
           </nav>
         </div>
-        <div class="projects-info">
+
+        <!-- Projects -->
+        <div id="projects">
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-12">
                   <a href="https://jjdinho.github.io/personal-site-for-professionals/" target="_blank">
                     <div class="project-card ">
                       <img class="project-img" src="assets/images/personalsiteforprofessionals.png" alt="Personal Site for Professionals">
                       <div class="project-description">
-                        <h5>Personal Site for Professionals</h5>
-                        <!-- <div class="technologies">
-                          <i class="fab fa-linkedin"></i>
-                          <i class="fab fa-linkedin"></i>
-                          <i class="fab fa-linkedin"></i>
-                        </div> -->
-                        <p class="description">A slim, clean landing-page for professionals. Capture new leads, display skills and products. Simple and effective.</p>
+                        <h5>Site personnel professionnel</h5>
+                        <p class="description">Un landing-page léger et propre orienté vers les travailleurs indépendants ainsi que les auto-entrepreneurs. Acquérez plus de prospects, montrez vos compétences et vos produits. Simple et efficace.</p>
                       </div>
                     </div>
                   </a>
               </div>
-              <div class="col-md-4">
-                <a href="http://www.lightstar.fr/" target="_blank">
-                  <div class="project-card">
-                    <img class="project-img" src="assets/images/lightstar.png" alt="lightstar.fr">
-                    <div class="project-description">
-                      <h5>lightstar.fr</h5>
-                      <!-- <div class="technologies">
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-linkedin"></i>
-                      </div> -->
-                      <p class="description">A site of curated educational videos geared toward young people which provides career suggestions based on interests. Built with ruby on rails.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-md-4">
+              <div class="col-md-12">
                 <a href="https://katygreenlee.com/paintings/" target="_blank">
                   <div class="project-card">
                     <img class="project-img"src="assets/images/katygreenlee.png" alt="katygreenlee.com">
                     <div class="project-description">
                       <h5>katygreenlee.com</h5>
-                      <!-- <div class="technologies">
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-linkedin"></i>
-                      </div> -->
-                      <p class="description">A live artist's ecommerce site. Beautifully simple display, an inviting user interface. Built on the wordpress framework.</p>
+                      <p class="description">Le site ecommerce d'une artiste. (C'est ma soeur - allez voir son travail !). Construit sur Wordpress, le thème met en valeur un design simple et élégant.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-12">
+                <a href="http://www.lightstar.fr/" target="_blank">
+                  <div class="project-card">
+                    <img class="project-img" src="assets/images/lightstar.png" alt="lightstar.fr">
+                    <div class="project-description">
+                      <h5>lightstar.fr</h5>
+                      <p class="description">Un vidéothèque encyclopédique adaptive qui a pour but d'aider des jeunes à s'orienter vers un métier selon leurs intérêts. Ce site a été construit sur Ruby on Rails.</p>
                     </div>
                   </div>
                 </a>
@@ -99,987 +77,55 @@
             </div>
           </div>
         </div>
+        <div class="white-slider"></div>
+        <div class="reveal-slider"></div>
+        <div class="left-line"></div>
+        <div class="right-line line-transition"></div>
       </main>
     </div>
   </div>
-  <table class="table-45" cellpadding="0" cellspacing="0">
-    <tr class="table-row">
-      <td>
-        <div class="line-black"></div>
-        <div class="line one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <!-- <td>
-        <div class="line-black"></div>
-        <div class="line one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line ten"></div>
-        <div class="whitespace"></div>
-      </td> -->
-    </tr>
-    <tr class="table-row">
-      <td>
-        <div class="line-black"></div>
-        <div class="line one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <div class="line-black"></div>
-        <div class="line one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <!-- <td>
-        <div class="line-black"></div>
-        <div class="line one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line ten"></div>
-        <div class="whitespace"></div>
-      </td> -->
-    </tr>
-    <tr class="table-row">
-      <td>
-        <div class="line-black"></div>
-        <div class="line one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <div class="line-black"></div>
-        <div class="line one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <div class="line-black"></div>
-        <div class="line ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-  </table>
 
-  <table class="table-s" cellpadding="0" cellspacing="0">
-    <tr class="table-row">
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <div class="line-thin-black"></div>
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <div class="line-thin-black"></div>
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin one"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin two"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin three"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin four"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin five"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin six"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin seven"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin eight"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin nine"></div>
-        <div class="whitespace"></div>
-      </td>
-      <td>
-        <!-- <div class="line-thin-black"></div> -->
-        <div class="line-thin ten"></div>
-        <div class="whitespace"></div>
-      </td>
-    </tr>
-  </table>
-<!--   <script src="assets/js/toggle-links.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="assets/js/anime.min.js"></script>
+  <script src="assets/js/transitions.js"></script>
   <script>
-    anime({
-      targets: '.line-black',
-      width: '100%',
-      duration: 5000,
-      elasticity: 0,
-      easing: 'easeInOutSine'
-    });
-    anime({
-      targets: '.line-thin',
-      width: '100%',
-      duration: 3000,
-      delay: 2000,
-      elasticity: 0,
-      easing: 'easeInOutSine'
-    });
-    anime({
-      targets: '.line',
-      width: '100%',
-      duration: 1500,
-      delay: 3500,
-      elasticity: 0,
-      easing: 'easeInOutSine'
-    });
-    anime({
-      targets: '.projects-container',
-      opacity: 1,
-      duration: 2000,
-      delay: 4500,
-      elasticity: 0,
-      easing: 'easeInOutSine'
-    });
+    var basicTimeline = anime.timeline();
+
+    basicTimeline
+      .add({
+        targets: '.left-line, .right-line',
+        height: '100%',
+        width: '10px',
+        borderRadius: '0',
+        duration: 1500,
+        elasticity: 0,
+        easing: 'easeOutExpo'
+      })
+      .add({
+        targets: '.left-line, .right-line',
+        width: '100%',
+        duration: 800,
+        elasticity: 0,
+        easing: 'easeOutExpo'
+      })
+      .add({
+        targets: '.left-line, .right-line',
+        width: '10px',
+        duration: 800,
+        elasticity: 0,
+        easing: 'easeOutExpo'
+      });
+
+      anime({
+        targets: '.white-slider',
+        width: '0%',
+        duration: 600,
+        delay: 2200,
+        elasticity: 0,
+        easing: 'easeOutExpo'
+      });
   </script>
 </body>
 </html>

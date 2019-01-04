@@ -41,6 +41,12 @@ const displayNoneMultiple = (elements) => {
 
 const goToLink = (link) => {
   window.location = link;
+  if (window.location.href.indexOf("fr") > -1) {
+    const french = link.split(".");
+    window.location = french[0] + "_fr." + french[1];
+  } else {
+    window.location = link;
+  }
 }
 
 const animateTransition = () => {
@@ -121,28 +127,32 @@ const homeLinkListen = () => {
 };
 
 const goToOtherLanguagePage = () => {
+  const url = window.location.href.split("/");
   if (window.location.href.indexOf("fr") > -1) {
-    window.location = 'index.html';
+    let english = url[url.length - 1];
+    english = english.replace("_fr", "");
+    window.location = english;
   } else {
-    window.location = 'index_fr.html';
+    let french = url[url.length - 1];
+    french = french.split(".");
+    french = french[0] + "_fr." + french[1];
+    window.location = french
   }
 };
 
 const changeLanguage = (event) => {
   event.preventDefault();
-  page = document.body
-  anime({
-      targets: page,
-      opacity: 0,
-      duration: 1000,
-      elasticity: 0,
-      easing: 'easeInSine',
-    });
-  setTimeout(goToOtherLanguagePage, 1000);
+  animateTransition();
+  setTimeout(goToOtherLanguagePage, 3000);
 };
 
 const languageLinkListen = () => {
-  languageLink.addEventListener("click", changeLanguage);
+  // Don't add event listener on projects page in order to ensure
+  // unique transition when leaving the page.
+  const bool = window.location.href.indexOf("projects") > -1
+  if (!bool) {
+    languageLink.addEventListener("click", changeLanguage);
+  }
 };
 
 const leaveProjectsPage = (event) => {
@@ -176,6 +186,8 @@ const leaveProjectsPage = (event) => {
     setTimeout(goToLink, 1500, homeURL);
   } else if (target == aboutLink) {
     setTimeout(goToLink, 1500, aboutURL);
+  } else if ((event.path[1] || target) == languageLink) {
+    setTimeout(goToOtherLanguagePage, 1500)
   }
 };
 
@@ -189,16 +201,16 @@ const addAllLinkEventListeners = () => {
   projectsLinkListen();
   aboutLinkListen();
   homeLinkListen();
-  // languageLinkListen();
 }
 
 
 
 document.addEventListener("DOMContentLoaded",function(){
-  leaveProjectsPageListen();
-  // Only add other link listeners if we are not on the projects page.
+  languageLinkListen();
+  // Only add other link listeners if we are not on the projects page,
+  // in order to facilitate unique transition when leaving projects page.
   if (window.location.href.indexOf("projects") > -1) {
-    console.log('Hey there :)')
+    leaveProjectsPageListen();
   } else {
     addAllLinkEventListeners();
   }
