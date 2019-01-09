@@ -128,6 +128,10 @@ const homeLinkListen = () => {
 
 const goToOtherLanguagePage = () => {
   const url = window.location.href.split("/");
+  if (url[url.length - 1] == "") {
+    window.location = 'index_fr.html'
+    return
+  }
   if (window.location.href.indexOf("fr") > -1) {
     let english = url[url.length - 1];
     english = english.replace("_fr", "");
