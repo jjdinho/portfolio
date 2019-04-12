@@ -45,6 +45,9 @@ p {
   width: 700px;
   height: 1000px;
 }
+.unclickable {
+  cursor: not-allowed;
+}
 @media (min-width: 768px) {
   .about {
     height: 600px;
