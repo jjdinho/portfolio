@@ -1,0 +1,91 @@
+.a-bit-about-me {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  /*position: relative;*/
+  margin: 100px 0;
+}
+
+.a-bit-about-me .text-div {
+  position: relative;
+  font-size: 20px;
+  z-index: 3 !important;
+  background-color: #fffffe;
+  width: 300px;
+  height: 475px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-container {
+  position: relative;
+}
+
+.bio-accent {
+  top: -50px;
+  left: 0;
+  position: absolute;
+  border-radius: 3px;
+  background-color: #6246ea;
+  z-index: 2 !important;
+
+  height: 505px;
+  width: 300px;
+}
+
+.bio-accent-two {
+  bottom: -30px;
+  right: 0;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 3px solid #e45858;
+  z-index: 1 !important;
+
+  height: 505px;
+  width: 300px;
+}
+
+.bio-image {
+  width: 300px
+  bottom: -30px;
+  right: -30px;
+  position: absolute;
+  z-index: 2;
+}
+
+@media (min-width: 400px) {
+  .bio-accent {
+    left: -50px;
+  }
+
+  .bio-accent-two {
+    right: -30px;
+  }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .a-bit-about-me {
+    /*margin: 30px 0;*/
+  }
+  .a-bit-about-me .text-div {
+    padding: 30px;
+    width: 700px;
+    height: 300px;
+  }
+  .bio-accent {
+    height: 360px;
+    width: 700px;
+  }
+  .bio-accent-two {
+    height: 360px;
+    width: 700px;
+  }
+  .bio-image {
+  width: 700px
+}
+}

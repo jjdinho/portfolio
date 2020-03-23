@@ -1,0 +1,80 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rotationLittle {
+  0% {transform: rotate(0deg) scale(1.4);}
+  50% {transform: rotate(180deg) scale(1.2);}
+  100% {transform: rotate(360deg) scale(1.4);}
+}
+
+/* Standard syntax */
+@keyframes rotationLittle {
+  0% {transform: rotate(0deg) scale(1.4);}
+  50% {transform: rotate(180deg) scale(1.2);}
+  100% {transform: rotate(360deg) scale(1.4);}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rotationMedium {
+  0% {transform: rotate(0deg) scale(1.6);}
+  50% {transform: rotate(180deg) scale(1.8);}
+  100% {transform: rotate(360deg) scale(1.6);}
+}
+
+/* Standard syntax */
+@keyframes rotationMedium {
+  0% {transform: rotate(0deg) scale(1.6);}
+  50% {transform: rotate(180deg) scale(1.8);}
+  100% {transform: rotate(360deg) scale(1.6);}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rotationBig {
+  0% {transform: rotate(0deg) scale(2);}
+  50% {transform: rotate(180deg) scale(2.2);}
+  100% {transform: rotate(360deg) scale(2);}
+}
+
+/* Standard syntax */
+@keyframes rotationBig {
+  0% {transform: rotate(0deg) scale(2);}
+  50% {transform: rotate(180deg) scale(2.2);}
+  100% {transform: rotate(360deg) scale(2);}
+}
+
+.blob-container {
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  left: 0;
+  margin-left: 0%;
+  z-index: -10;
+  height: 100vh;
+  width: 100vw;
+}
+.blob {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: rotationLittle; /* Safari 4.0 - 8.0 */
+  animation-name: rotationLittle;
+  -webkit-animation-duration: 90s; /* Safari 4.0 - 8.0 */
+  animation-duration: 90s;
+}
+
+@media (min-width: 400px) {
+  .blob-container {
+    top: 0;
+  }
+  .blob {
+    -webkit-animation-name: rotationMedium; /* Safari 4.0 - 8.0 */
+    animation-name: rotationMedium;
+  }
+}
+
+@media (min-width: 768px) {
+  .blob-container {
+    top:0;
+  }
+  .blob {
+    -webkit-animation-name: rotationBig; /* Safari 4.0 - 8.0 */
+    animation-name: rotationBig;
+  }
+}

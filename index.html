@@ -8,123 +8,152 @@
   <meta property="og:description"        content="Let's do good work for the good of all." />
   <meta property="og:image"              content="https://jakejohnson.me/assets/images/home.png" />
 
-  <!-- Bootstrap 4 -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <!-- My style -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/index.css">
 
   <title>Jake Johnson</title>
 </head>
-<body>
+<body class="transition-color transition-bg" data-color="secondary-two">
+  <div class="blob-container">
+    <svg class="blob bg-secondary" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+      <g transform="translate(300,300)">
+        <path d="M123.9,-191C164.3,-166.9,203.1,-138.7,224.9,-100.1C246.8,-61.4,251.6,-12.3,242,32.8C232.4,77.8,208.4,118.8,176.4,149.3C144.4,179.8,104.5,199.7,63.2,209.1C21.9,218.4,-20.8,217.2,-69,213.1C-117.3,209,-171.3,202.1,-196.7,171.3C-222.1,140.4,-218.9,85.7,-223.7,33.9C-228.4,-18,-241.1,-66.9,-231.6,-113.2C-222,-159.4,-190.2,-203,-147.9,-226.1C-105.6,-249.3,-52.8,-252.2,-5.5,-243.6C41.8,-235.1,83.6,-215.1,123.9,-191Z" fill="#fffffe"/>
+      </g>
+    </svg>
+  </div>
+  <div class="master-container">
+    <section class="main-container">
 
-  <div class="container-full">
-    <div class="content-wrapper content-90vh">
-      <!-- Home -->
-      <main class="main-container home">
-        <div class="content-container">
-          <nav class="home-nav">
-              <ul class="">
-                <li class="">
-                    <a id="projects-link" class="jake-nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="">
-                  <a id="about-link" class="jake-nav-link" href="about.html">About</a>
-                </li>
-              </ul>
-          </nav>
-          <h1 class="home-header">Jake Johnson</h1>
-          <div class="social-links">
-            <a href="https://github.com/jjdinho"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/jake-johnson-687b91a5/"><i class="fab fa-linkedin"></i></a>
-          </div>
-          <a class="email nav-link" href="mailto:johnson.s.jake@gmail.com?subject=Let&#39;s work together">johnson.s.jake@gmail.com</a>
-          <div class="home-language">
-            <a id="language-link" href="index_fr.html" class="jake-nav-link"><span role="image" aria-label="french flag">FR 🇫🇷</span></a>
+
+      <div class="text-container">
+        <!-- <div class="link-list-top transition-color" data-color="links-two">
+          <a href="#selected-works">Selected Work</a>
+          <a href="#a-bit-about-me">A bit about me</a>
+        </div> -->
+        <h1 class="transition-color" data-color="text-two"><span>Jake</span> Johnson</h1>
+        <p class="transition-color" data-color="text-two">Web Designer & Developer.</p>
+        <p class="transition-color" data-color="text-two">Let us do good work for the good of all.</p>
+        <div class="link-list transition-color" data-color="links-two">
+          <a href="https://github.com/jjdinho"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jake-johnson-687b91a5/"><i class="fab fa-linkedin"></i></a>
+          <a class="email-link" href="mailto:johnson.s.jake@gmail.com?subject=Let&#39;s work together">
+            <i class="fas fa-envelope"></i>
+            <div class="email-div transition-color transition-bg" data-color="pop-out-two">
+              <div class="email-div-text">Let's work together! Email me &#x1F642;</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="images/jake_3_bl.jpg" alt="Jake Johnson Web Developer">
+        <div class="image-accent transition-color transition-bg" data-color="highlight-two"></div>
+        <div class="image-accent-two transition-color transition-bg" data-color="tertiary-two"></div>
+      </div>
+
+    </section>
+    <!-- <section class="selected-works-filler" id="selected-works">
+       <h1>Selected Work</h1>
+    </section>
+    <section class="selected-works">
+      <div>
+      </div>
+      <div class="selected-works-scroll-wrapper" id="selected-works-scroll-wrapper">
+        <div class="project-wrapper"></div>
+        <div class="project-wrapper">
+          <div class="project-container">
+            <div class="project-title">
+              <h3>Jana Concierge</h3>
+              <div class="project-title-accent jana"></div>
+            </div>
+            <a href="#"><img src="images/jana_en.jpg" alt=""></a>
+            <div class="project-text-container">
+              <div class="project-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima a saepe, distinctio provident tempora sapiente? Ea voluptas soluta, modi quos nihil earum reiciendis beatae incidunt?</p>
+                <p>Ea voluptas soluta, modi quos nihil earum reiciendis beatae incidunt?</p>
+              </div>
+              <div class="project-accent jana"></div>
+              <div class="project-accent-two jana"></div>
+            </div>
           </div>
         </div>
-        <div class="white-slider"></div>
-        <div class="reveal-slider"></div>
-        <div class="left-line"></div>
-        <div class="right-line line-transition"></div>
-        <div class="bottom-line line-transition"></div>
-        <div class="top-line line-transition"></div>
-      </main>
-    </div>
+        <div>
+          <div class="project-container">
+            <div class="project-title">
+              <h3>Personal Coach</h3>
+              <div class="project-title-accent perso"></div>
+            </div>
+            <a href="#"><img src="images/personalsiteforprofessionals.jpg" alt=""></a>
+            <div class="project-text-container">
+              <div class="project-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima a saepe, distinctio provident tempora sapiente? Ea voluptas soluta, modi quos nihil earum reiciendis beatae incidunt?</p>
+                <p>Ea voluptas soluta, modi quos nihil earum reiciendis beatae incidunt?</p>
+              </div>
+              <div class="project-accent perso"></div>
+              <div class="project-accent-two perso"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="project-container">
+            <div class="project-title">
+              <h3>Jana Concierge</h3>
+              <div class="project-title-accent"></div>
+            </div>
+            <a href="#"><img src="images/jana_en.jpg" alt=""></a>
+            <div class="project-text-container">
+              <div class="project-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima a saepe, distinctio provident tempora sapiente? Ea voluptas soluta, modi quos nihil earum reiciendis beatae incidunt?</p>
+                <p>Ea voluptas soluta, modi quos nihil earum reiciendis beatae incidunt?</p>
+              </div>
+              <div class="project-accent"></div>
+              <div class="project-accent-two"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="project-container">
+            <div class="project-title">
+              <h3>Jana Concierge</h3>
+              <div class="project-title-accent"></div>
+            </div>
+            <a href="#"><img src="images/jana_en.jpg" alt=""></a>
+            <div class="project-text-container">
+              <div class="project-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima a saepe, distinctio provident tempora sapiente? Ea voluptas soluta, modi quos nihil earum reiciendis beatae incidunt?</p>
+                <p>Ea voluptas soluta, modi quos nihil earum reiciendis beatae incidunt?</p>
+              </div>
+              <div class="project-accent"></div>
+              <div class="project-accent-two"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="a-bit-about-me" id="a-bit-about-me">
+      <div class="bio-container">
+        <div class="text-div bg-main">
+          <p class="transition-color" data-color="text-two">
+            I'm a Hoosier currently based in the south of France. I believe that we were <em>created</em> to create. When we do so, we are meant to honor our Creator.
+          </p>
+          <p class="transition-color" data-color="text-two">
+            Educated in the liberal arts, then reborn with technical web dev skills, my interests are diverse.
+          </p>
+          <p class="transition-color" data-color="text-two">
+            My favorite web dev stack is Ruby on Rails/PostgreSQL/Heroku/Github but I am accustomed to others. I also like a good Wordpress site &#x1F609;
+          </p>
+        </div>
+        <div class="bio-accent transition-color transition-bg" data-color="highlight-two"></div>
+        <div class="bio-accent-two transition-color transition-bg" data-color="tertiary-two"></div>
+        <img class="bio-image" src="images/france.JPG" alt="France">
+      </div>
+    </section> -->
   </div>
 
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="assets/js/anime.min.js"></script>
-  <script src="assets/js/transitions.js"></script>
-  <script>
-    anime({
-      targets: '.left-line, .right-line',
-      height: '100%',
-      duration: 3000,
-      delay: 500,
-      elasticity: 0,
-      easing: 'easeOutExpo'
-    });
-    anime({
-      targets: '.top-line, .bottom-line',
-      width: '100%',
-      duration: 3000,
-      delay: 500,
-      elasticity: 0,
-      easing: 'easeOutExpo'
-    });
-
-    anime({
-      targets: '.white-slider',
-      width: '0%',
-      duration: 600,
-      delay: 1500,
-      elasticity: 0,
-      easing: 'easeOutExpo'
-    });
-
-    var basicTimeline = anime.timeline();
-
-    basicTimeline
-      .add({
-        targets: '.reveal-slider',
-        width: '100%',
-        duration: 600,
-        delay: 1500,
-        elasticity: 0,
-        easing: 'easeOutExpo'
-      })
-      .add({
-        targets: '.reveal-slider',
-        left: '100%',
-        width: '0',
-        duration: 600,
-        delay: 0,
-        elasticity: 0,
-        easing: 'easeOutExpo'
-      });
-  </script>
-
-  <div class="cui-embed" data-cui-uid="jlGedw" data-cui-avatar="https://images.typeform.com/images/uKq46qafHnrM" data-cui-mode="pill" data-cui-pill-button-color="#2ECC4F"></div><script src="https://public-assets.typeform.com/confab/embed.js" async></script>
-
-
-
-  <!-- Hotjar Tracking Code for https://jakejohnson.me -->
-  <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:1433121,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 </html>
