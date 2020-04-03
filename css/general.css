@@ -24,7 +24,17 @@ button {
   color: #fffffe;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
+
 .master-container {
+  position: relative;
+  overflow: hidden;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -44,6 +54,10 @@ button {
   /*overflow-x: hidden;*/
 }
 
+.main-container::before {
+
+}
+
 .image-container {
   position: relative;
   margin: 30px 0;
@@ -56,7 +70,8 @@ button {
 }
 
 
-.image-container .image-accent {
+.image-container::after {
+  content: '';
   height: 500px;
   width: 320px;
   position: absolute;
@@ -66,7 +81,8 @@ button {
   z-index: -1;
 }
 
-.image-container .image-accent-two {
+.image-container::before {
+  content: '';
   border-radius: 3px;
   border: 3px solid #e45858;
   height: 430px;
@@ -108,7 +124,7 @@ button {
 .text-container .link-list a {
   color: #6246ea;
   font-size: 24px;
-  padding-right: 16px;
+  margin-right: 16px;
 }
 
 .text-container .link-list a:hover {
@@ -124,9 +140,10 @@ button {
 }
 
 .text-container .link-list-top a {
+  position: relative;
   color: #6246ea;
   font-size: 20px;
-  padding-right: 0;
+  margin-right: 0;
   margin-bottom: 18px;
   text-decoration: none;
 }
@@ -187,8 +204,34 @@ button {
   transition-delay: 0.3s;
 }
 
-.transition-bg {
-  transition: background-color 1s ease;
+a#back-link:before {
+  content: "\f060";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  border-radius: 50%;
+  padding: 5px 6px;
+  transition: 0.2s ease-in-out;
+}
+
+a#back-link:hover:before, a#back-link:focus:before {
+  color: #fff;
+  background-color: #e45858;
+}
+
+.highlighted, .highlighted:hover, .highlighted:focus {
+  color: #fff !important;
+}
+
+.highlighted:after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  height: calc(100% + 8px);
+  width: calc(100% + 8px);
+  background-color: #e45858;
+  z-index: -1;
 }
 
 @media (min-width: 400px) {
@@ -204,11 +247,11 @@ button {
   .image-container img {
     width: 400px;
   }
-  .image-container .image-accent {
+  .image-container::after {
     width: 400px;
     left: 50px;
   }
-  .image-container .image-accent-two {
+  .image-container::before {
     width: 485px;
     left: -15px;
   }
@@ -235,7 +278,7 @@ button {
     justify-content: left;
   }
   .text-container .link-list-top a {
-    padding-right: 24px;
+    margin-right: 24px;
   }
   .text-container h1 span {
     margin-left: 30px;

@@ -1,56 +1,55 @@
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes rotationLittle {
-  0% {transform: rotate(0deg) scale(1.4);}
-  50% {transform: rotate(180deg) scale(1.2);}
-  100% {transform: rotate(360deg) scale(1.4);}
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
 }
 
 /* Standard syntax */
 @keyframes rotationLittle {
-  0% {transform: rotate(0deg) scale(1.4);}
-  50% {transform: rotate(180deg) scale(1.2);}
-  100% {transform: rotate(360deg) scale(1.4);}
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes rotationMedium {
-  0% {transform: rotate(0deg) scale(1.6);}
-  50% {transform: rotate(180deg) scale(1.8);}
-  100% {transform: rotate(360deg) scale(1.6);}
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
 }
 
 /* Standard syntax */
 @keyframes rotationMedium {
-  0% {transform: rotate(0deg) scale(1.6);}
-  50% {transform: rotate(180deg) scale(1.8);}
-  100% {transform: rotate(360deg) scale(1.6);}
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes rotationBig {
-  0% {transform: rotate(0deg) scale(2);}
-  50% {transform: rotate(180deg) scale(2.2);}
-  100% {transform: rotate(360deg) scale(2);}
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
 }
 
 /* Standard syntax */
 @keyframes rotationBig {
-  0% {transform: rotate(0deg) scale(2);}
-  50% {transform: rotate(180deg) scale(2.2);}
-  100% {transform: rotate(360deg) scale(2);}
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
 }
 
-.blob-container {
+.main-container::before {
+  content: '';
   overflow: hidden;
-  position: fixed;
-  top:0;
-  left: 0;
-  margin-left: 0%;
+  position: absolute;
+  top: -550px;
+  left: calc(-50% - 300px);
   z-index: -10;
-  height: 100vh;
-  width: 100vw;
-}
-.blob {
+  height: 1200px;
+  width: 1200px;
+  background: url('../images/svg/blob.svg') center center no-repeat;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-name: rotationLittle; /* Safari 4.0 - 8.0 */
@@ -60,20 +59,16 @@
 }
 
 @media (min-width: 400px) {
-  .blob-container {
-    top: 0;
-  }
-  .blob {
+  .main-container::before {
     -webkit-animation-name: rotationMedium; /* Safari 4.0 - 8.0 */
     animation-name: rotationMedium;
   }
 }
 
 @media (min-width: 768px) {
-  .blob-container {
-    top:0;
-  }
-  .blob {
+  .main-container::before {
+    top: calc(50% - 600px);
+    left: -670px;
     -webkit-animation-name: rotationBig; /* Safari 4.0 - 8.0 */
     animation-name: rotationBig;
   }
