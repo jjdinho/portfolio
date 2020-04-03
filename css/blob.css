@@ -44,12 +44,15 @@
   content: '';
   overflow: hidden;
   position: absolute;
-  top: -550px;
-  left: calc(-50% - 300px);
+  top: 0;
+  right: 0;
   z-index: -10;
-  height: 1200px;
-  width: 1200px;
-  background: url('../images/svg/blob.svg') center center no-repeat;
+  height: 200vh;
+  width: 200vh;
+  background-image: url('../images/svg/blob.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200vh 200vh;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-name: rotationLittle; /* Safari 4.0 - 8.0 */
@@ -67,8 +70,6 @@
 
 @media (min-width: 768px) {
   .main-container::before {
-    top: calc(50% - 600px);
-    left: -670px;
     -webkit-animation-name: rotationBig; /* Safari 4.0 - 8.0 */
     animation-name: rotationBig;
   }
