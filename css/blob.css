@@ -47,12 +47,12 @@
   top: 0;
   right: 0;
   z-index: -10;
-  height: 200vh;
-  width: 200vh;
+  height: 150vh;
+  width: 150vh;
   background-image: url('../images/svg/blob.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 200vh 200vh;
+  background-size: 150vh 150vh;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-name: rotationLittle; /* Safari 4.0 - 8.0 */
@@ -70,6 +70,7 @@
 
 @media (min-width: 768px) {
   .main-container::before {
+    right: 27vh;
     -webkit-animation-name: rotationBig; /* Safari 4.0 - 8.0 */
     animation-name: rotationBig;
   }
