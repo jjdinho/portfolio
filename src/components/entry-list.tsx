@@ -25,7 +25,7 @@ export function EntryList({ entries }: { entries: EntryMeta[] }) {
             className="group block"
           >
             <div className="flex items-baseline justify-between gap-4">
-              <span className="text-fg group-hover:text-teal transition-colors">
+              <span className="text-fg group-hover:text-accent transition-colors">
                 {entry.title}
               </span>
               <span className="text-muted text-sm shrink-0">

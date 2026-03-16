@@ -19,6 +19,11 @@ export type Entry = EntryMeta & {
   html: string;
 };
 
+function titleFromSlug(slug: string): string {
+  const s = slug.replace(/_/g, " ");
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
 function getEntries(kind: "posts" | "poems"): EntryMeta[] {
   const dir = path.join(contentDir, kind);
   if (!fs.existsSync(dir)) return [];
@@ -32,7 +37,7 @@ function getEntries(kind: "posts" | "poems"): EntryMeta[] {
       const { data } = matter(raw);
       return {
         slug,
-        title: data.title ?? slug,
+        title: data.title ?? titleFromSlug(slug),
         date: data.date ?? "",
         kind: kind === "posts" ? "post" : "poem",
         excerpt: data.excerpt,
@@ -70,7 +75,7 @@ export async function getEntry(
 
   return {
     slug,
-    title: data.title ?? slug,
+    title: data.title ?? titleFromSlug(slug),
     date: data.date ?? "",
     kind: kind === "posts" ? "post" : "poem",
     excerpt: data.excerpt,

@@ -5,13 +5,13 @@
   --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", ui-monospace, monospace;
 
-  --color-bg: oklch(0.141 0.005 285.823);
-  --color-fg: oklch(0.93 0 0);
-  --color-muted: oklch(0.442 0.006 285.938);
-  --color-border: oklch(0.274 0.006 286.033);
-  --color-surface: oklch(0.18 0.005 285.823);
-  --color-teal: oklch(0.88 0.08 195);
-  --color-teal-dim: oklch(0.65 0.08 195);
+  --color-bg: #141110;
+  --color-fg: #eae8e6;
+  --color-muted: #a5a09c;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-surface: #211e1c;
+  --color-accent: #5ec4b6;
+  --color-accent-dim: #3d8a7f;
 }
 
 @layer base {
@@ -20,17 +20,17 @@
   }
 
   ::selection {
-    background: oklch(0.88 0.08 195 / 0.25);
+    background: rgba(94, 196, 182, 0.25);
   }
 }
 
 .prose {
-  --tw-prose-body: oklch(0.85 0 0);
-  --tw-prose-headings: oklch(0.93 0 0);
-  --tw-prose-links: oklch(0.88 0.08 195);
-  --tw-prose-bold: oklch(0.93 0 0);
-  --tw-prose-code: oklch(0.88 0.08 195);
-  --tw-prose-quotes: oklch(0.7 0 0);
-  --tw-prose-quote-borders: oklch(0.274 0.006 286.033);
-  --tw-prose-hr: oklch(0.274 0.006 286.033);
+  --tw-prose-body: #d5d2d0;
+  --tw-prose-headings: #eae8e6;
+  --tw-prose-links: #5ec4b6;
+  --tw-prose-bold: #eae8e6;
+  --tw-prose-code: #5ec4b6;
+  --tw-prose-quotes: #a5a09c;
+  --tw-prose-quote-borders: rgba(255, 255, 255, 0.1);
+  --tw-prose-hr: rgba(255, 255, 255, 0.1);
 }

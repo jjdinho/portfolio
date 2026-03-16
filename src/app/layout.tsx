@@ -26,7 +26,7 @@ export default function RootLayout({
           <header className="mb-16 flex items-center justify-between">
             <Link
               href="/"
-              className="text-fg font-semibold tracking-tight hover:text-teal transition-colors"
+              className="text-fg font-semibold tracking-tight hover:text-accent transition-colors"
             >
               Jake Johnson
             </Link>
