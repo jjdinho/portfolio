@@ -8,8 +8,9 @@ export default function About() {
           Here is where I write. Expansively expanding interests. No AI-generated content (but this blog was built by Claude).
         </p>
         <p>
-          You can reach me at{" "}
-          <a href="mailto:jake@jakejohnson.me" target="_blank">jake@jakejohnson.me</a>.
+          You can find me on{" "}
+          <a href="https://x.com/jakesjohnson" target="_blank">Twitter</a> and{" "}
+          <a href="https://www.linkedin.com/in/jake-s-johnson" target="_blank">LinkedIn</a>.
         </p>
         <p>
           Trying to build better product analytics without losing my soul, at{" "}
