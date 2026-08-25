@@ -1,7 +1,7 @@
 ---
 title: "On Serendipity and Success"
 date: "2026-08-25"
-excerpt: "Hard work gets you to the top, but serendipity decides who gets to be the best."
+excerpt: "There are many stories of top athletes who became the best after being doubted..."
 ---
 
 There are many stories of top athletes who became the best after being doubted. That gives hope to every kid imagining big game moments in their back yard.
