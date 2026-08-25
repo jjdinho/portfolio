@@ -1,10 +1,10 @@
 ---
 title: "On Serendipity and Success"
 date: "2026-08-25"
-excerpt: "Many are the stories of athletes who rose to the top after being doubted early on..."
+excerpt: "Many are the stories of athletes who rose to the top after being doubted..."
 ---
 
-Many are the stories of athletes who rose to the top after being doubted early on. That gives hope to every kid imagining big game moments in their back yard.
+Many are the stories of athletes who rose to the top after being doubted. That gives hope to every kid imagining big game moments in their back yard.
 
 Look at Fernando Mendoza who just made his NFL preseason debut. First overall pick in the 2026 NFL draft, led the Indiana Hoosiers to a legendary 16-0 record to win the NCAA National Championship.
 
