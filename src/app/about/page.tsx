@@ -5,16 +5,16 @@ export default function About() {
       <div className="prose prose-invert max-w-none">
         <p>
           I&apos;m Jake Johnson.
-          Here is where I write. Expansively expanding interests. No AI-generated content (but this blog was built by Claude).
+          Here is where I write. Expansively expanding interests. No AI-generated content.
         </p>
         <p>
           You can find me on{" "}
-          <a href="https://x.com/jakesjohnson" target="_blank">Twitter</a> and{" "}
-          <a href="https://www.linkedin.com/in/jake-s-johnson" target="_blank">LinkedIn</a>.
+          <a href="https://x.com/jakesjohnson" target="_blank">Twitter</a>,{" "}
+          <a href="https://www.linkedin.com/in/jake-s-johnson" target="_blank">LinkedIn</a>, and{" "}
+          <a href="https://github.com/jjdinho" target="_blank">GitHub</a>.
         </p>
         <p>
-          Trying to build better product analytics without losing my soul, at{" "}
-          <a href="https://sessionvision.com" target="_blank">sessionvision.com</a>.
+          Building several production software products to improve quality of life in myriad ways.
         </p>
       </div>
     </section>
