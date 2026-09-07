@@ -27,6 +27,12 @@ export default function RootLayout({
           !function(){"use strict";!function(s,n){const t=n.sessionvision;if(t&&t.__SV)return;const e={_i:[],_q:[],init:function(n,t){e._i.push([n,t]);const i=["capture","identify","reset","getDistinctId","register","registerOnce"];for(const s of i)e[s]=function(...n){e._q.push([s,...n])};const o=s.createElement("script");o.async=!0,o.src=(t?.apiHost||"https://cdn.sessionvision.com")+"/"+(t?.version||"latest")+"/sessionvision.min.js";const c=s.getElementsByTagName("script")[0];c&&c.parentNode?c.parentNode.insertBefore(o,c):s.head.appendChild(o)}};n.sessionvision=e}(document,window)}();
           sessionvision.init('sv_pub_8tQbUJS0E5eKvhd1HCT80idedQmw669f9V3xqGNfMg8');
         `}</Script>
+        {/* Privacy-friendly analytics by Plausible */}
+        <Script src="https://plausible.io/js/pa-93DExdWHBX61w-8DkbWKB.js" />
+        <Script id="plausible-init">{`
+          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+          plausible.init()
+        `}</Script>
         <div className="mx-auto max-w-2xl px-6 py-12">
           <header className="mb-16 flex items-center justify-between">
             <Link
