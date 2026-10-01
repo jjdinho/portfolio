@@ -1,5 +1,5 @@
 ---
-date: "2026-09-21"
+date: "2026-10-01"
 ---
 
 An ode to all who live a normal life:
